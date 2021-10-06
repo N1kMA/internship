@@ -1,0 +1,12 @@
+List processes listening on ports 80 and 443
+lsof -i :80
+lsof -i tcp:443
+
+List process environment variables by given PID
+cat /proc/PID/environ
+
+Launch a python program my_program.py through CLI in the background.
+How would you close it after some period of time?
+
+my_program.py &
+kill PID
